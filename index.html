@@ -1,31 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Qwerty | Shop Something Different</title>
     <!--goolge fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="./styles.css"/>
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-<body>
+  <body>
     <!--site body-->
-<header class="site-header">
-    <nav class="utility-nav" aria-label="utility-nav"
+    <!-- The header has two rows: utility links on top and the main search row below. -->
+    <header class="site-header">
+      <nav class="utility-nav" aria-label="utility-nav">
+        <div class="utility-links">
+          <a href="#big-deals">Big Deals</a>
+          <a href="#top-brands">Top Brands</a>
+          <a href="#suggestions">Suggestions</a>
+          <a href="#help">Help &amp; Contact</a>
+        </div>
 
+        <div class="account-links">
+          <a href="#login">Log In/Sign up</a>
+          <a href="#account"
+            ><span class="material-icons" aria-hidden="true"
+              >account_circle</span
+            >Account</a
+          >
+          <a href="#cart"
+            ><span class="material-icons" aria-hidden="true">shopping_cart</span
+            >Cart</a
+          >
+        </div>
 
-</header>
+        <div class="main-header">
+          <a class="brand" href="#" aria-label="Qwerty home">Qwarty</a>
+          <form class="search" role="search">
+            <label class="sr-only" for="site-search">Search products</label>
+            <input
+              id="site-search"
+              name="query"
+              type="search"
+              placeholder="search for anything"
+            />
+            <button type="submit" aria-label="search">
+              <span class="material-icons">search</span>
+            </button>
+          </form>
+          <a class="deal-button" href="#big-deals">0% Financing 24 Months</a>
+        </div>
+      </nav>
+    </header>
 
+    <main class="store-layout">
+      <!--the side navigations-->
 
+      <aside class="category-nav" aria-label="product categories">
+        <a href="#clothing">Clothing &amp; Shoes</a>
+        <a href="#electronics">Electronics</a>
+        <a href="#books">Books</a>
+        <a href="#food">Food &amp; Drinks</a>
+        <a href="#appliances">Appliances</a>
+        <a href="#sports">Sports &amp; Outdoor</a>
+        <a href="toys">Toys &amp; Baby</a>
+        <a href="garden">Garden</a>
+      </aside>
 
-<main>
+      <section class="products" aria-labelledby="products-heading">
+        <h1 id="products-heading" class="sr-only">Featured Products</h1>
+        <article class="product-card">
+          <h2>Watch Product</h2>
+          <img src="./assets/watch.avif" alt="watch product" />
+          <div class="card-body">
+            <p>
+              This is your favourite brand of watch, it combines clean
+              dependable performance
+            </p>
+            <div class="buy-row">
+              <span class="price"></span>$49.99
+              <button type="button" aria-label=" Add watch to the cart">
+                <span class="material-icons">add_shopping_cart</span>
+              </button>
+            </div>
+          </div>
+        </article>
 
-</main>
-
-
-
-</body>
+        <article class="product-card">
+          <h2>Chars Products</h2>
+          <img src="./assets/chair.avif" alt="chair" />
+          <div class="card-body">
+            <p>
+              A chari made for the confort with product from plyhood for
+              dependable performance
+            </p>
+            <div class="buy-row">
+              <span class="price">$89.99</span>
+              <button type="button" aria-label="Add chair to the cart">
+                <span class="material-icons">add_shopping_cart</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <h2>Shoes Products</h2>
+          <img src="./assets/Shoe.avif" alt="Shoe" />
+          <div class="card-body">
+            <p>
+              This is one of the best shoes made for confort and it unisex
+              ,eaning any one can whare it
+            </p>
+            <div class="buy-row">
+              <span class="price">129.99</span>
+              <button type="button" aria-label="Add shoes to the cart">
+                <span class="material-icons"></span>
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
 </html>
